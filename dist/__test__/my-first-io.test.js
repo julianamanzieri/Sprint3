@@ -8,7 +8,7 @@ describe('Given a my-first-io script', () => {
             const expectedLines = '6';
             const filePath = 'npx ts-node ./src/my-first-io.ts ./src/myFile.txt';
             const result = (0, child_process_1.execSync)(filePath).toString().trim();
-            // expect(result).toBe(expectedLines);
+            expect(result).toContain(expectedLines);
         });
     });
 });

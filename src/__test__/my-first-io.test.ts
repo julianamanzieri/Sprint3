@@ -10,7 +10,7 @@ describe('Given a my-first-io script', () => {
 
       const result = execSync(filePath).toString().trim();
 
-      // expect(result).toBe(expectedLines);
+      expect(result).toContain(expectedLines);
     });
   });
 });
